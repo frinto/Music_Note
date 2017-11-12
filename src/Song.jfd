@@ -1,0 +1,33 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:239:p, comp label1:::p::p}, seq l {space :::p, comp label2:::p:79:p, space :p:35:p, comp songComboBox:::p:426:p}, seq l {space :p:253:p, comp playSongButton:::p::p}}, space ::37:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, par l:::p {comp label2:::::x, comp songComboBox:::::x}, space :::p, comp playSongButton:::p::p, space ::21:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Huy Le Song Player"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "songComboBox"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "songComboBoxActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Song:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "playSongButton"
+				"text": "Play Song"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "playSongButtonActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 585, 145 )
+		} )
+	}
+}

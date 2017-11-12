@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:132:p, comp label1:::p::p}, seq l {space :::p, par l {comp label2:::p::p, comp label3::l:p::p}, space :::p, par l:::p {seq {comp radioFrequency:::p::p, space :::p, comp radioHalfStep:::p::p, space :::p, comp radioMusicNote:::p::p}, comp noteTextField:::::x}}}, space ::29:x}, seq t {space :0:174:x, comp playButton:::p::p, space :p:172:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, par b {comp label2::b:p::p, comp radioFrequency::b:p::p, comp radioHalfStep::b:p::p, comp radioMusicNote::b:p::p}, space :::p, par b {comp noteTextField::b:p::p, comp label3::b:p::p}, space :::p, comp playButton:::p::p, space ::9:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Huy Le Melody Player"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Play Note From:"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioFrequency"
+				"text": "Frequency"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioHalfStep"
+				"text": "Half Step"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioMusicNote"
+				"text": "Music Note"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "noteTextField"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Note:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "playButton"
+				"text": "Play"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 165 )
+		} )
+	}
+}
